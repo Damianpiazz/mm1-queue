@@ -1,0 +1,19 @@
+{
+  "_comment": "Parametros de la simulacion M/M/1 - Banco con un cajero",
+
+  "simulation": {
+    "arrival_rate_per_hour": 20,
+    "service_time_minutes_mean": 2.8,
+    "rho_values": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95],
+    "_rho_comment": "La simulacion fija service_rate_mu con el service_time dado y varia la tasa de llegadas lambda para lograr cada rho deseado.",
+    "sim_hours": 5000,
+    "warmup_hours": 500,
+    "random_seed": null,
+    "save_events": false
+  },
+
+  "costs": {
+    "cashier_hourly_wage": 15.0,
+    "customer_waiting_cost_per_hour": 25.0
+  }
+}
